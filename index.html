@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-mode">
+    <div class="container">
+        <button id="theme-toggle">
+            <i id="theme-icon" class="fa-solid fa-moon"></i>
+        </button>
+        <!-- <input type="text" name="input" id="input" placeholder="0"> -->
+        <textarea name="input" id="input" cols="30" rows="1" placeholder="0"></textarea>
+        <div class="btns">
+            <button class="operators" onclick="clr()">C</button>
+            <button class="operators" onclick="display_value('%')"><i class="fa-solid fa-percent"></i></button>
+            <button class="operators" onclick="delete_value()"><i class="fa-solid fa-delete-left"></i></button>
+            <button class="operators" onclick="display_value('/')"><i class="fa-solid fa-divide"></i></button>
+        </div>
+        <div class="btns">
+            <button onclick="display_value('7')">7</button>
+            <button onclick="display_value('8')">8</button>
+            <button onclick="display_value('9')">9</i></button>
+            <button class="operators" onclick="display_value('*')"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="btns">
+            <button onclick="display_value('4')">4</button>
+            <button onclick="display_value('5')">5</button>
+            <button onclick="display_value('6')">6</i></button>
+            <button class="operators" onclick="display_value('-')"><i class="fa-solid fa-minus"></i></button>
+        </div>
+        <div class="btns">
+            <button onclick="display_value('1')">1</button>
+            <button onclick="display_value('2')">2</button>
+            <button onclick="display_value('3')">3</i></button>
+            <button class="operators" onclick="display_value('+')"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="btns">
+            <button onclick="display_value('00')">00</button>
+            <button onclick="display_value('0')">0</button>
+            <button onclick="display_value('.')">.</i></button>
+            <button class="operators operator-equal" onclick="evaluate_string()"><i
+                    class="fa-solid fa-equals"></i></button>
+        </div>
+
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
