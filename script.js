@@ -19,13 +19,13 @@ theme_toggler.addEventListener("click", () => {
 // Code for calculations
 let input_area = document.getElementById('input');
 
-document.addEventListener('keyup', (event) => {
-    if (event.keyCode === 13) {
-        console.log('yo')
-        evaluate_string();
-    }
+// document.addEventListener('keyup', (event) => {
+//     if (event.keyCode === 13) {
+//         console.log('yo')
+//         evaluate_string();
+//     }
 
-})
+// })
 
 let display_value = (value) => { // Code for displaying values on clicking the button
     input_area.value += value;
@@ -44,45 +44,3 @@ let evaluate_string = () => { //Code for evaluation
         input_area.value = eval(input_area.value);
     }
 }
-
-
-
-
-
-
-// // Code for calculations
-// let buttons = document.querySelectorAll('button');
-
-// let btn_array = Array.from(buttons);
-
-// btn_array.forEach(button => {
-//     button.addEventListener('click', (e) => {
-//         // e.target.value = Number.parseInt(e.target.value) // Converting a string into a number
-//         if (e.target.innerHTML == '=') {
-//             try {
-//                 // input_string = Math.eval(input_string);
-//                 input_string = eval(input_string);
-//                 input_area.value = input_string;
-//             }
-//             catch {
-//                 input_area.value = 'Error';
-//             }
-//         }
-//         else if (e.target.innerHTML == 'C') {
-//             input_string = '';
-//             input_area.value = input_string;
-//         }
-//         else if (e.target.innerHTML == 'DEL') {
-//             input_string = input_string.substring(0, input_string.length - 1);
-//             input_area.value = input_string;
-//         }
-//         else {
-//             input_string += e.target.innerHTML;
-//             input_area.value = input_string;
-//             if (e.target.innerHTML == '=') {
-
-//             }
-//             // console.log(typeof (e.target.value));
-//         }
-//     })
-// })
